@@ -5,6 +5,8 @@ require_once("usuario.php");
 mostraAlerta("success");
 mostraAlerta("danger");
 ?>
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
     <div class="container">
         <img src="imagens/logo.png" class="img-fluid rounded mx-auto d-block" id="logo">    
@@ -21,5 +23,5 @@ mostraAlerta("danger");
             <button class="btn btn-link btn-block btn-sm" value="Recuperar Senha">Recuperar Senha </button>
         </form>
     </div>    
-    <?php include("footer.html"); ?>
+    <?php require_once("footer.php"); ?>
 
