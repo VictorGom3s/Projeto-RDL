@@ -5,17 +5,18 @@ require_once("banco/conecta.php");
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=3, shrink-to-fit=no">
     <title>Reserva de Laboratórios</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navprincipal">
         <div class="container">        
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="form-reservas.php">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Reservas</a></li>
+                <li class="nav-item"><a class="nav-link" href="listaReservas.php">Reservas</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
