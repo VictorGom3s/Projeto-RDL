@@ -3,6 +3,9 @@ require_once("header.php");
 require_once("usuario.php");
 
 ?>
+<div class="container text-center">
+    <p class="display-4" id="msgBonita">Reserve seu laboratório com praticidade :)</p>
+</div>
 
     <div class="container col-6">
         <form action="adiciona-reserva.php">
@@ -25,7 +28,7 @@ require_once("usuario.php");
                 </select>
             </div>
             <div class="form-group">
-                <label for="horario">Laboratório:</label>
+                <label for="horario">Horário:</label>
                 <select name="horario" class="form-control">
                     <optgroup label="MATUTINO">
                             <option value="07:00 - 09:00"> 07:30 - 09:00 </option>

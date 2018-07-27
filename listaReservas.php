@@ -2,6 +2,10 @@
 require_once("header.php");
 require_once("usuario.php");
 ?>
+<div class="container text-center">
+    <p class="display-4" id="msgBonita">Verifique as reservas em vigor :)</p>
+</div>
+
 <div class="container col-11 table-responsive">
     <table class="table table-borderless table-light table-hover">
         <caption>Lista de Reservas em vigor</caption>

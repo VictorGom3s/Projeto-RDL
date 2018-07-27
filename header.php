@@ -17,7 +17,7 @@ require_once("banco/conecta.php");
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="form-reservas.php">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="listaReservas.php">Reservas</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.php">Contato</a></li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
