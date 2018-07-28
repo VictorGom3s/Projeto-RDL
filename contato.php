@@ -18,6 +18,9 @@ require_once("usuario.php");
             <tr>                
                 <td><textarea class="form-control" placeholder="Escreva sua mensagem aqui"></textarea></td>
             </tr>
+            <tr>
+                <td><input type="submit" class="btn btn-primary" value="Enviar"></td>
+            </tr>
         </table>
     </form>
 </div>

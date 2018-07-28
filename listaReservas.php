@@ -16,28 +16,7 @@ require_once("usuario.php");
                 <th>Para</th>
                 <th>Horario</th>
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Teste</td>
-                <td>Teste</td>
-                <td>Teste</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Teste</td>
-                <td>Teste</td>
-                <td>Teste</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Teste</td>
-                <td>Teste</td>
-                <td>Teste</td>
-            </tr>
-        </tbody>
-        
+        </thead>       
     </table>
 </div>
 

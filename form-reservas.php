@@ -58,6 +58,9 @@ require_once("usuario.php");
                     <label for="obs">Observações:</label>
                     <textarea class="form-control"></textarea>
                 </div>
+
+                <input type="submit" class="btn btn-primary" value="Enviar">
+                
             </div>
         </form>
     </div>
