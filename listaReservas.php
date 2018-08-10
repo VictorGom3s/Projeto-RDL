@@ -1,6 +1,6 @@
 <?php
 require_once("header.php");
-require_once("usuario.php");
+require_once("logica-usuario.php");
 ?>
 <div class="container text-center">
     <p class="display-4" id="msgBonita">Verifique as reservas em vigor :)</p>

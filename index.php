@@ -1,15 +1,20 @@
 <?php
 require_once("banco/conecta.php");
-require_once("usuario.php");
-
-mostraAlerta("success");
-mostraAlerta("danger");
+require_once("logica-usuario.php");
 ?>
+
+
 <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
     <div class="container">
         <img src="imagens/logo.png" class="img-fluid rounded mx-auto d-block" id="logo">    
+    </div>
+    <div class="container col-4 small">
+        <?php
+        mostraAlerta("success");
+        mostraAlerta("danger");
+        ?>
     </div>
     <div class="container col-3">
         <form action="login.php" method="post">

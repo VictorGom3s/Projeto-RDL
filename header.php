@@ -1,6 +1,6 @@
 <?php
 require_once("banco/conecta.php");
-require_once("usuario.php");
+require_once("logica-usuario.php");
 if (!isset($_SESSION['user'])) {
     header("Location: index.php");
 }
@@ -32,3 +32,10 @@ if (!isset($_SESSION['user'])) {
                 <li class="nav-item"><a class="nav-link" href="logout.php">Sair</a></li>            
             </ul>        
     </nav>
+
+    <div class="container col-4 small">
+        <?php
+        mostraAlerta("success");
+        mostraAlerta("danger");
+        ?>
+    </div>
