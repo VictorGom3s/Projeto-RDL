@@ -10,12 +10,12 @@ $password = mysqli_real_escape_string($conexao, $password);
 
 $senhaMd5 = md5($password); //convertendo a senha para md5
 
-$query = "SELECT * FROM usuarios WHERE usuario = '{$user}' AND senha='{$senhaMd5}'";
+$query = "SELECT * FROM tb_login WHERE login = '{$user}' AND senha ='{$senhaMd5}'";
 $resultado = mysqli_query($conexao, $query);        //fazendo autenticação no BD
 $usuario = mysqli_fetch_assoc($resultado);
 
 if($usuario == TRUE){
-    logaUsuario($user); //fazendo a autenticação
+    login($user); //fazendo a autenticação
     header("Location: form-reservas.php");
 }else{
     $_SESSION["danger"] = "Usuário ou senha incorretos!";

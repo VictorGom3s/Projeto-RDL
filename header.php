@@ -1,5 +1,9 @@
 <?php
 require_once("banco/conecta.php");
+require_once("usuario.php");
+if (!isset($_SESSION['user'])) {
+    header("Location: index.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,14 +18,17 @@ require_once("banco/conecta.php");
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navprincipal">
         <div class="container">        
+            <a class="navbar-brand" href="#">
+                <img src="imagens/favicon.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                Labsis
+            </a>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="form-reservas.php">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="listaReservas.php">Reservas</a></li>
                 <li class="nav-item"><a class="nav-link" href="contato.php">Contato</a></li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>                    
         </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="logout.php">Sair</a></li>            
+            </ul>        
     </nav>

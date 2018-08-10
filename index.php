@@ -23,5 +23,5 @@ mostraAlerta("danger");
             <button class="btn btn-link btn-block btn-sm" value="Recuperar Senha">Recuperar Senha </button>
         </form>
     </div>    
-    <?php require_once("footer.php"); ?>
+<?php require_once("footer.php"); ?>
 
