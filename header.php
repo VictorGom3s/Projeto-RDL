@@ -1,6 +1,9 @@
 <?php
 require_once("banco/conecta.php");
 require_once("logica-usuario.php");
+
+/* Verifica se há uma sessão iniciada, se não, redireciona para pagina
+de login */
 if (!isset($_SESSION['user'])) {
     header("Location: index.php");
 }
@@ -33,6 +36,7 @@ if (!isset($_SESSION['user'])) {
             </ul>        
     </nav>
 
+    <!--div para mostar alertas de sucesso e falha -->
     <div class="container col-4 small">
         <?php
         mostraAlerta("success");

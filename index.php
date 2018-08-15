@@ -12,6 +12,7 @@ require_once("logica-usuario.php");
     </div>
     <div class="container col-4 small">
         <?php
+        /*Chama alertas de erro e sucesso caso houver*/
         mostraAlerta("success");
         mostraAlerta("danger");
         ?>
