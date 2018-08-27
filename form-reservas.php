@@ -8,10 +8,10 @@ require_once("logica-usuario.php");
 </div>
 
     <div class="container col-6">
-        <form action="adiciona-reserva.php">
+        <form action="adiciona-reserva.php" method="POST">
             <div class="form-group">
                 <label for="data">Data da Reserva:</label>
-                <input type="date" class="form-control">
+                <input type="date" class="form-control" name="data">
             </div>
             <div class="form-group">
                 <label for="turma">Turma:</label>
@@ -56,7 +56,7 @@ require_once("logica-usuario.php");
                 </select>
                 <div class="form-group">
                     <label for="obs">Observações:</label>
-                    <textarea class="form-control"></textarea>
+                    <textarea class="form-control" name="obs"></textarea>
                 </div>
 
                 <input type="submit" class="btn btn-primary" value="Enviar">

@@ -28,6 +28,14 @@ require_once("logica-usuario.php");
             <input type="submit" class="btn btn-primary btn-block" value="Entrar"></input>
             <button class="btn btn-link btn-block btn-sm" value="Recuperar Senha">Recuperar Senha </button>
         </form>
-    </div>    
+        <div class="alert alert-info" role="alert">
+            <div class="row">
+                <p class="">
+                    Login: teste <br>
+                    Senha: 123456 <br>
+                </p>
+            </div>
+        </div>    
+    </div>
 <?php require_once("footer.php"); ?>
 
